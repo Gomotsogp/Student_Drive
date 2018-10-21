@@ -31,12 +31,12 @@ namespace Student_Drive
 
             SetContentView(Resource.Layout.Main);
 
-            SetSupportActionBar(FindViewById<SupportToolbar>(Resource.Id.toolBar));
+            SetSupportActionBar(FindViewById<SupportToolbar>(Resource.Id.ToolBar));
             SupportActionBar ab = SupportActionBar;
             ab.SetHomeAsUpIndicator(Resource.Drawable.ic_menu);
             ab.SetDisplayHomeAsUpEnabled(true);
-            ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, FindViewById<DrawerLayout>(Resource.Id.drawer_layout), FindViewById<SupportToolbar>(Resource.Id.toolBar), Resource.String.drawer_open, Resource.String.drawer_close);
-            FindViewById<DrawerLayout>(Resource.Id.drawer_layout).AddDrawerListener(toggle);
+            ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, FindViewById<DrawerLayout>(Resource.Id.Drawer_layout), FindViewById<SupportToolbar>(Resource.Id.ToolBar), Resource.String.drawer_open, Resource.String.drawer_close);
+            FindViewById<DrawerLayout>(Resource.Id.Drawer_layout).AddDrawerListener(toggle);
             toggle.SyncState();
             FindViewById<NavigationView>(Resource.Id.nav_view).SetNavigationItemSelectedListener(this);
 
