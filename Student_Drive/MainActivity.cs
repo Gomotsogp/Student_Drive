@@ -39,6 +39,11 @@ namespace Student_Drive
                         {
                             Toast.MakeText(this.ApplicationContext, "Login successful", ToastLength.Short);
                             StartActivity(new Intent(this, typeof(MainPage)));
+                            break;
+                        }
+                        else
+                        {
+                            Toast.MakeText(this.ApplicationContext, "Invalid user credentials. Please try again", ToastLength.Short);
                         }
                     }
                     
@@ -46,7 +51,7 @@ namespace Student_Drive
                 }
                 else
                 {
-                    Toast.MakeText(this.ApplicationContext, "Invalid user credentials. Please try again", ToastLength.Short);
+                    Toast.MakeText(this.ApplicationContext, "Please enter credentials.", ToastLength.Short);
                 }
                 
             };
