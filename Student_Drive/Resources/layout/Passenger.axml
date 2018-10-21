@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <fragment
+        android:id="@+id/passmap"
+        android:tag="passengermap"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:name="com.google.android.gms.maps.MapFragment" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/lblNextRide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Next Ride:" />
+        <TextView
+            android:id="@+id/lblDriver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Driver:" />
+        <TextView
+            android:id="@+id/lblPassengers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Passengers:" />
+        <TextView
+            android:id="@+id/lblETA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Estimated Time Of Arrival:" />
+    </LinearLayout>
+</LinearLayout>

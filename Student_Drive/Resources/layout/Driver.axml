@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/lblNextRide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Next Ride:" />
+        <fragment
+            android:id="@+id/passmap"
+            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            android:name="com.google.android.gms.maps.MapFragment" />
+        <TextView
+            android:id="@+id/lblPassengers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Passengers" />
+        <TextView
+            android:id="@+id/lblPassen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:text="Chantelle " />
+        <TextView
+            android:id="@+id/lblRequests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/dark_red"
+            android:text="Requests" />
+    </LinearLayout>
+</LinearLayout>

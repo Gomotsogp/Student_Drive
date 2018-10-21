@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--////////////////////////////////////////////////////////////////////////////////////////-->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/til_Name">
+        <android.support.design.widget.TextInputEditText
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:maxLines="1"
+            android:hint="Name" />
+    </android.support.design.widget.TextInputLayout>
+<!--////////////////////////////////////////////////////////////////////////////////////////-->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/til_Surname"
+        android:layout_below="@+id/til_Name">
+        <android.support.design.widget.TextInputEditText
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/surname"
+            android:maxLines="1"
+            android:hint="Surname" />
+    </android.support.design.widget.TextInputLayout>
+<!--////////////////////////////////////////////////////////////////////////////////////////-->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/til_Email"
+        android:layout_below="@+id/til_Surname">
+        <android.support.design.widget.TextInputEditText
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:maxLines="1"
+            android:hint="E-mail" />
+    </android.support.design.widget.TextInputLayout>
+<!--////////////////////////////////////////////////////////////////////////////////////////-->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/til_Username"
+        android:layout_below="@+id/til_Email">
+        <android.support.design.widget.TextInputEditText
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:maxLines="1"
+            android:hint="Username" />
+    </android.support.design.widget.TextInputLayout>
+<!--////////////////////////////////////////////////////////////////////////////////////////-->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/til_Password"
+        android:layout_below="@+id/til_Username">
+        <android.support.design.widget.TextInputEditText
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:maxLines="1"
+            android:hint="Password" />
+    </android.support.design.widget.TextInputLayout>
+<!--////////////////////////////////////////////////////////////////////////////////////////-->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/til_ConfirmPassword"
+        android:layout_below="@+id/til_Password">
+        <android.support.design.widget.TextInputEditText
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirmPassword"
+            android:maxLines="1"
+            android:hint="Confirm Password" />
+    </android.support.design.widget.TextInputLayout>
+	
+	<ListView
+        android:id="@+id/listView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="1" 
+		android:layout_below="@+id/password"/>
+
+	<Button
+        android:id="@+id/buttonRegisterPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_violet"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:layout_margin="4dp"
+        android:layout_below="@+id/til_ConfrimPassword" />
+		
+</LinearLayout>
